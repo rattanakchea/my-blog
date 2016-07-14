@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a well rounded web developer with a passion to solve problems. I love the feeling of accomplishment when I solve a problem.
 
-### More Information
+### Hobbies
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I love reading technical blogs, reading sophiticated answers on quora and playing with new gadgets.
