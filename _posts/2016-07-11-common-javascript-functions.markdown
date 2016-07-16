@@ -18,9 +18,9 @@ Below is a small list of common JavaScript functions I use on regular basis
 **String.split("")**
 - split a string by character ("" is empty) into an array.
 
-   var s= "hello";
-   var a = s.split("");
-   console.log(a);  // ["h", "e", "l", "l", "o"]
+    var s= "hello";
+    var a = s.split("");
+    console.log(a);  // ["h", "e", "l", "l", "o"]
 
 # Array
 Array is one of the most used data structure and a lot of time we deal with it by using loops to obtain/work on each element in the array.

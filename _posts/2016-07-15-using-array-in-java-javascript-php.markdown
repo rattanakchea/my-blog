@@ -5,7 +5,6 @@ date:   2016-07-15 23:11:20 -0700
 categories: javascript
 ---
 
-# Using Array in Java, JavaScript and PHP
 Array is perhaps most used data structures because it is so simple and easy to use. Yet its usage and syntax vary from one language to another.
 
 ## Java
