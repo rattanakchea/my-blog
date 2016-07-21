@@ -7,7 +7,9 @@ categories: javascript
 Programming often involves working on redundant tasks. The `for` loops help shorten the code and reduce tedious tasks. But the way `for` is used can be different for different languages. This post aims to provide some `for` loop examples for Java, Javascript and PHP working on String, Array, and Object.
 
 ##Loop a String
+
 **Java**
+
 ```
 String str = "hello";
 for (int i=0; i < str.length(); i++){
