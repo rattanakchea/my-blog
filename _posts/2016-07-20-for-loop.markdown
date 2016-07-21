@@ -1,0 +1,130 @@
+---
+layout: post
+title:  "The For Loop for different programming languages"
+date:   2016-07-20 23:11:20 -0700
+categories: javascript
+---
+Programming often involves working on redundant tasks. The `for` loops help shorten the code and reduce tedious tasks. But the way `for` is used can be different for different languages. This post aims to provide some `for` loop examples for Java, Javascript and PHP working on String, Array, and Object.
+
+##Loop a String
+***Java***
+```
+String str = "hello";
+for (int i=0; i < str.length(); i++){
+System.out.print(str.charAt(i));
+}
+```
+another less optimal solution is to convert the str into an char array using `str.toCharArray()`.  See loop an Array section in Java below.
+
+Note:
+`length()` and `charAt(index)` are methods of String object class.
+
+**Javascript**
+
+    var str = "hello";
+    for (var i=0; i < str.length; i++){
+        console.log(str.charAt(i));
+    }
+
+Note:
+In JavaScript, we can declare string in two ways:
+
+var str1 = 'primitive';  //datatype is primitive: string
+var str2 = new String('string object');  //string as object
+
+Since primitive has no methods and property, str1 was autoboxed to wrapper class String (as in s2). Then str1 becomes a String object with length as property and charAt as its method, and so on.
+
+**PHP**
+It is not as simple as Java, and JavasScript looping a string. One way is to convert the string to an array, then we can loop that array. Another way to use helper method, substr() to get each character of the string.
+```
+//for
+for($i=0; $i < count($array); $i++){
+	echo $array[$i];
+}
+```
+```
+//foreach
+//convert a string to an array first, then we can loop the array
+//use str_split() function to split a string by character
+$str = "hello";
+$array = str_split($str);  //split by character into an array
+foreach($array as $value){
+	echo $value;
+}
+```
+
+##Loop an Array
+**Java**
+```
+int[] nums = new int[5];
+for (int i=0; i < nums.length; i++){
+	nums[i] = i; }
+	System.out.print(Arrays.toString(nums)); //[0, 1, 2, 3, 4]
+}
+```
+```
+//another way
+for(int i : nums){
+	System.out.print(i);  //01234
+}
+```
+Note: An array is a container object with a fixed size. The length of an array is established when the array is created. Array has a length property instead of length method in Object. In fact, length is a public final field of Array. 
+Read more here Chapter 10. Arrays (http://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html#jls-10.7)
+
+**Javascript**
+```
+var nums = ["hi", "hello", "you"];
+	//sequential loop
+	for (var i=0; i < nums.length; i++){
+	console.log(num[i]));   //hihelloyou
+}
+```
+
+Note: javaScript has another loop for-in which is commonly used in javascript object loop.
+```
+var obj = {  "a": 1,  "b": 2,  "c": 3};
+for (var prop in obj) { 
+	 if (obj.hasOwnProperty(prop)) {
+	console.log("prop: " + prop + " value: " + obj[prop])  }
+}
+```
+*Read more*
+[Loop through array in JavaScript](http://stackoverflow.com/questions/3010840/loop-through-array-in-javascript)
+
+##Loop an Object
+**Java**
+In Java, to loop an array of objects, we can use sequential loop, an iterator or a colon(:). Here are some examples.
+```
+ArrayList<String> list = new ArrayList<String>();
+list.add("a");
+list.add("b");
+Iterator<String> itr = list.iterator();
+while(itr.hasNext()){
+	//do something with itr.next();
+	//for example itr.remove();
+}
+```
+
+Using foreach loop
+```
+for( String s : list){
+	// s is local String variable
+	//modify s does not modify the list
+}
+```
+
+**PHP**
+In PHP, loop an object use foreach loop like in array.**
+```
+foreach ($objects as $obj){
+	echo $obj->property;
+}
+//or
+foreach ($obj as $key => $value) {
+	echo "$key => $value\n";
+}
+```
+*References*
+What is the difference between string literals and String objects in JavaScript? (http://stackoverflow.com/questions/17256182/what-is-the-difference-between-string-literals-and-string-objects-in-javascript)
+str_split - Manual (http://us.php.net/str_split)
+Arrays (The Java™ Tutorials > Learning the Java Language > Language Basics) (https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
