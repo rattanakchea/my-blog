@@ -9,6 +9,7 @@ Programming often involves working on redundant tasks. The `for` loops help shor
 
 ##Loop a String
 **Java**
+
 ```
 String str = "hello";
 for (int i=0; i < str.length(); i++){
@@ -21,6 +22,7 @@ Note:
 `length()` and `charAt(index)` are methods of String object class.
 
 **Javascript**
+
 ```
 var str = "hello";
 for (var i=0; i < str.length; i++){
@@ -30,6 +32,7 @@ for (var i=0; i < str.length; i++){
 
 Note:
 In JavaScript, we can declare string in two ways:
+
 ```
 var str1 = 'primitive';  //datatype is primitive: string
 var str2 = new String('string object');  //string as object
@@ -39,12 +42,14 @@ Since primitive has no methods and property, str1 was autoboxed to wrapper class
 
 **PHP**
 It is not as simple as Java, and JavasScript looping a string. One way is to convert the string to an array, then we can loop that array. Another way to use helper method, substr() to get each character of the string.
+
 ```
 //for
 for($i=0; $i < count($array); $i++){
 	echo $array[$i];
 }
 ```
+
 ```
 //foreach
 //convert a string to an array first, then we can loop the array
@@ -58,6 +63,7 @@ foreach($array as $value){
 
 ##Loop an Array
 **Java**
+
 ```
 int[] nums = new int[5];
 for (int i=0; i < nums.length; i++){
@@ -65,6 +71,7 @@ for (int i=0; i < nums.length; i++){
 	System.out.print(Arrays.toString(nums)); //[0, 1, 2, 3, 4]
 }
 ```
+
 ```
 //another way
 for(int i : nums){
@@ -75,6 +82,7 @@ Note: An array is a container object with a fixed size. The length of an array i
 Read more here Chapter 10. Arrays (http://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html#jls-10.7)
 
 **Javascript**
+
 ```
 var nums = ["hi", "hello", "you"];
 	//sequential loop
@@ -97,6 +105,7 @@ for (var prop in obj) {
 ##Loop an Object
 **Java**
 In Java, to loop an array of objects, we can use sequential loop, an iterator or a colon(:). Here are some examples.
+
 ```
 ArrayList<String> list = new ArrayList<String>();
 list.add("a");
@@ -118,6 +127,7 @@ for( String s : list){
 
 **PHP**
 In PHP, loop an object use foreach loop like in array.**
+
 ```
 foreach ($objects as $obj){
 	echo $obj->property;
@@ -127,6 +137,7 @@ foreach ($obj as $key => $value) {
 	echo "$key => $value\n";
 }
 ```
+
 *References*
 What is the difference between string literals and String objects in JavaScript? (http://stackoverflow.com/questions/17256182/what-is-the-difference-between-string-literals-and-string-objects-in-javascript)
 str_split - Manual (http://us.php.net/str_split)
