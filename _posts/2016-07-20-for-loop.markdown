@@ -20,17 +20,19 @@ Note:
 `length()` and `charAt(index)` are methods of String object class.
 
 **Javascript**
-
-    var str = "hello";
-    for (var i=0; i < str.length; i++){
-        console.log(str.charAt(i));
-    }
+```
+var str = "hello";
+for (var i=0; i < str.length; i++){
+    console.log(str.charAt(i));
+}
+```
 
 Note:
 In JavaScript, we can declare string in two ways:
-
+```
 var str1 = 'primitive';  //datatype is primitive: string
 var str2 = new String('string object');  //string as object
+```
 
 Since primitive has no methods and property, str1 was autoboxed to wrapper class String (as in s2). Then str1 becomes a String object with length as property and charAt as its method, and so on.
 
