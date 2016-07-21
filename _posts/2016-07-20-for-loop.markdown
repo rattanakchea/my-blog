@@ -8,6 +8,7 @@ categories: javascript
 Programming often involves working on redundant tasks. The `for` loops help shorten the code and reduce tedious tasks. But the way `for` is used can be different for different languages. This post aims to provide some `for` loop examples for Java, Javascript and PHP working on String, Array, and Object.
 
 ##Loop a String
+
 **Java**
 
 ```
@@ -41,6 +42,7 @@ var str2 = new String('string object');  //string as object
 Since primitive has no methods and property, str1 was autoboxed to wrapper class String (as in s2). Then str1 becomes a String object with length as property and charAt as its method, and so on.
 
 **PHP**
+
 It is not as simple as Java, and JavasScript looping a string. One way is to convert the string to an array, then we can loop that array. Another way to use helper method, substr() to get each character of the string.
 
 ```
