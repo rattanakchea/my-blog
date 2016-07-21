@@ -46,5 +46,6 @@ PHP can store integer and string keys at the same time as PHP does not different
 The key is optional. If it is not specified, PHP will use the increment of the largest previously used integer (http://php.net/manual/en/language.types.integer.php) key.
 
 **References:**
-Read section on the difference between Arrays and Objects: JavaScript Arrays (http://www.w3schools.com/js/js_arrays.asp)
-PHP: Arrays - Manual (http://php.net/manual/en/language.types.array.php)
+
+[Read section on the difference between Arrays and Objects: JavaScript Arrays](http://www.w3schools.com/js/js_arrays.asp)
+[PHP: Arrays - Manual](http://php.net/manual/en/language.types.array.php)
