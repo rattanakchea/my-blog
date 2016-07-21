@@ -92,6 +92,7 @@ var nums = ["hi", "hello", "you"];
 ```
 
 Note: javaScript has another loop for-in which is commonly used in javascript object loop.
+
 ```
 var obj = {  "a": 1,  "b": 2,  "c": 3};
 for (var prop in obj) { 
